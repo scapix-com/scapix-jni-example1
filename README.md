@@ -2,9 +2,9 @@
 
 Implementing Java native methods in C++
 
-<class1.h> - using C++ free functions.
-<class2.h> - using C++ non-static member functions, with "ptr" field in Java objects.
-<class3.h> - using C++ non-static member functions, with std::unordered_map of Java refs to C++ objects.
+- class1 - example using C++ free functions.
+- class2 - example using C++ non-static member functions, with "ptr" field in Java objects.
+- class3 - example using C++ non-static member functions, with std::unordered_map of Java refs to C++ objects.
 
 Build:
 
