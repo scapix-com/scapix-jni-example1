@@ -45,7 +45,7 @@ inline scapix::immortal<std::unordered_map<jni::weak_ref<jni::object<"com/scapix
 namespace scapix::jni {
 
 // This example creates associated C++ object on the first native call for a Java object.
-// Alternatively, Java and associated C++ object would be created and inserted into map by some other code
+// Alternatively, Java and associated C++ object could be created and inserted into map by some other code
 // and convert_this would perform lookup only.
 
 template <std::same_as<example1::class3> T>
