@@ -3,8 +3,8 @@ project(example1_java)
 
 include(UseJava)
 
-file(GLOB_RECURSE sources *.java)
-source_group(TREE "${CMAKE_CURRENT_LIST_DIR}" PREFIX "java" FILES ${sources})
+file(GLOB_RECURSE sources "*.java")
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" PREFIX "java" FILES ${sources})
 
 get_target_property(scapix_jni_sources scapix::jni INTERFACE_SOURCES)
 

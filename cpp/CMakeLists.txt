@@ -3,11 +3,11 @@ project(example1_cpp)
 
 add_library(example1_cpp SHARED)
 
-file(GLOB_RECURSE sources source/*)
-source_group(TREE "${CMAKE_CURRENT_LIST_DIR}/source" PREFIX "source" FILES ${sources})
+file(GLOB_RECURSE sources "source/*")
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${sources})
 
 target_sources(example1_cpp PRIVATE ${sources})
-target_include_directories(example1_cpp PRIVATE source)
+target_include_directories(example1_cpp PRIVATE "source")
 
 # optionally override API selection
 # set(SCAPIX_JAVA_API "jdk-11" CACHE STRING "" FORCE)
