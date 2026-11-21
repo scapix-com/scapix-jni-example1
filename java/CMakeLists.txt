@@ -1,6 +1,3 @@
-cmake_minimum_required(VERSION 3.20...3.27)
-project(example1_java)
-
 include(UseJava)
 
 file(GLOB_RECURSE sources "*.java")

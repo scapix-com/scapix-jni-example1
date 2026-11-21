@@ -1,6 +1,3 @@
-cmake_minimum_required(VERSION 3.20...3.27)
-project(example1_cpp)
-
 add_library(example1_cpp SHARED)
 
 file(GLOB_RECURSE sources "source/*")
