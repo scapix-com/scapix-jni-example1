@@ -44,11 +44,9 @@ using class1_native_methods = jni::native_methods
 } // namespace example1
 ```
 
-### Clone and build (Windows, macOS, Linux)
+### Build
 
 ```bash
-git clone https://github.com/scapix-com/scapix-jni-example1
-cd scapix-jni-example1
-cmake -B build
-cmake --build build
+cmake --preset default
+cmake --build build/default
 ```
